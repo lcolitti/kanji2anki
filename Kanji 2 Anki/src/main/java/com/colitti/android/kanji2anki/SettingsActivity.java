@@ -12,56 +12,11 @@ import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 
-public class SettingsActivity extends PreferenceActivity
-        implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String PREF_IMPORT_FILE = "import_file";
-    private static final String PREF_EXPORT_FILE = "export_file";
-    private static final String PREF_EXPORT_DECK = "export_deck";
-
-    private EditTextPreference mImportFile;
-    private EditTextPreference mExportFile;
-    private EditTextPreference mExportDeck;
-
-    private String checkNull(String s) {
-        if (s != null) {
-            return s;
-        } else {
-            return "";
-        }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        getPreferenceScreen().getSharedPreferences()
-                .registerOnSharedPreferenceChangeListener(this);
-    }
-
-    @Override
-    public void onPause() {
-        getPreferenceScreen().getSharedPreferences()
-                .unregisterOnSharedPreferenceChangeListener(this);
-        super.onPause();
-    }
-
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        Preference pref = findPreference(key);
-        if (pref != null) {
-            pref.setSummary(checkNull(sharedPreferences.getString(key, "")));
-        }
-    }
-
+public class SettingsActivity extends PreferenceActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preferences);
-
-        mImportFile = (EditTextPreference) findPreference(PREF_IMPORT_FILE);
-        mExportFile = (EditTextPreference) findPreference(PREF_EXPORT_FILE);
-        mExportDeck = (EditTextPreference) findPreference(PREF_EXPORT_DECK);
-
-        mImportFile.setSummary(checkNull(mImportFile.getText()));
-        mExportFile.setSummary(checkNull(mExportFile.getText()));
-        mExportDeck.setSummary(checkNull(mExportDeck.getText()));
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                    new SettingsFragment()).commit();
     }
 }
