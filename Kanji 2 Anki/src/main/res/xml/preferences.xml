@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="import_file"
+        android:title="@string/pref_import_file"
+        android:inputType="textUri"
+        android:defaultValue="/sdcard/android/data/org.nick.kanjirecognizer/files/export/kr-favorites-bkp.csv" />
+
+    <EditTextPreference
+        android:key="export_file"
+        android:title="@string/pref_export_file"
+        android:inputType="textUri"
+        android:defaultValue="/sdcard/android/data/org.nick.kanjirecognizer/files/export/collection.anki2" />
+
+    <EditTextPreference
+        android:key="export_deck"
+        android:title="@string/pref_export_deck"
+        android:inputType="textUri"
+        android:defaultValue="Default"/>
+
+</PreferenceScreen>

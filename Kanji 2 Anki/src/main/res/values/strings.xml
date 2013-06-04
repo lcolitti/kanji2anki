@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >Kanji 2 Anki</string>
+    <string name="settings_name">Kanji 2 Anki Settings</string>
+    <string name="action_settings" >Settings</string>
+
+    <string name="deck_picker_label">Deck name:</string>
+    <string name="model_picker_label">Card type:</string>
+    <string name="export_file_label">KR backup</string>
+
+    <string name="sync_button">Sync</string>
+
+
+    <string name="pref_import_file">Import file</string>
+    <string name="pref_export_file">Export file</string>
+    <string name="pref_export_deck">Export deck</string>
+
+    <string name="error_ok">OK</string>
+
+</resources>

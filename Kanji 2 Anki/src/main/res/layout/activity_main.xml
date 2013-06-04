@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/current_kanji"
+                android:textSize="50sp"
+                android:gravity="center_horizontal"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_button"
+                android:id="@+id/sync_button"
+                android:layout_gravity="center"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:onClick="onSyncButtonClicked"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@id/progress_current"
+                    android:textSize="50sp"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/progress_slash"
+                    android:textSize="50sp"
+                    android:text=" / "
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/progress_max"
+                    android:textSize="50sp"
+                    android:visibility="invisible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
