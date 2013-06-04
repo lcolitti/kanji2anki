@@ -25,6 +25,7 @@
         </activity>
         <activity
                 android:name="com.colitti.android.kanji2anki.SettingsActivity"
+                android:parentActivityName="com.colitti.android.kanji2anki.MainActivity"
                 android:label="@string/settings_name" >
         </activity>
     </application>
