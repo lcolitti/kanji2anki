@@ -155,6 +155,11 @@ public class MainActivity extends Activity {
         });
     }
 
+    protected void onResume() {
+        mStopped = false;
+        super.onResume();
+    }
+
     protected void onPause() {
         super.onPause();
         mStopped = true;
