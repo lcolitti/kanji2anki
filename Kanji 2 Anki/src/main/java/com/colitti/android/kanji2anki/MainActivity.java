@@ -213,11 +213,20 @@ public class MainActivity extends Activity {
         mProgressMaxText = (TextView) findViewById(R.id.progress_max);
 
         mStopped = false;
+        checkSettings();
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+    }
+
+    public void checkSettings() {
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+        String importFile = settings.getString("import_file", "");
+        if (importFile == null || importFile.length() == 0) {
+            openSettings(null);
+        }
     }
 
     public void openSettings(MenuItem item) {
