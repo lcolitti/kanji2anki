@@ -161,7 +161,7 @@ public class AnkiDroidSyncer {
         Map <String,Card> cards = new Hashtable<String,Card>();
         String[] selection = {deckId};
         // Example: "select cards.nid, notes.sfld, notes.flds from notes join cards on cards.nid =
-        // id where cards.did = <deckid>;"
+        // notes.id where cards.did = <deckid>;"
         String sql =
                 "select " + TABLE_CARDS + "." + COLUMN_NOTE_ID +
                 ", " + TABLE_NOTES + "." + COLUMN_FRONT +
