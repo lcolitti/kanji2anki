@@ -4,18 +4,18 @@
         android:key="import_file"
         android:title="@string/pref_import_file"
         android:inputType="textUri"
-        android:defaultValue="/sdcard/android/data/org.nick.kanjirecognizer/files/export/kr-favorites-bkp.csv" />
+        android:defaultValue="/sdcard/Android/data/org.nick.kanjirecognizer/files/export/kr-favorites-bkp.csv" />
 
     <EditTextPreference
         android:key="export_file"
         android:title="@string/pref_export_file"
         android:inputType="textUri"
-        android:defaultValue="/sdcard/android/data/org.nick.kanjirecognizer/files/export/collection.anki2" />
+        android:defaultValue="/sdcard/AnkiDroid/collection.anki2" />
 
     <EditTextPreference
         android:key="export_deck"
         android:title="@string/pref_export_deck"
         android:inputType="textUri"
-        android:defaultValue="Default"/>
+        android:defaultValue="Kanji"/>
 
 </PreferenceScreen>
