@@ -4,22 +4,15 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2.
  */
-package com.colitti.android.kanji2anki;
-
-import android.os.Environment;
-import android.util.Log;
-import android.widget.ArrayAdapter;
+package com.colitti.android.Kanji2Anki;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import com.colitti.android.kanji2anki.Kanji;
 
 public class KanjiRecognizerImporter {
     private static final String TAG = "KanjiRecognizerImporter";

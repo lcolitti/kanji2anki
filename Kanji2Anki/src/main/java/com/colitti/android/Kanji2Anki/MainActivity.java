@@ -4,7 +4,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2.
  */
-package com.colitti.android.kanji2anki;
+package com.colitti.android.Kanji2Anki;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,19 +17,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Spinner;
 
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import android.util.Log;
+
 import android.widget.TextView;
 import android.app.AlertDialog;
 

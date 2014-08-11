@@ -4,7 +4,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2.
  */
-package com.colitti.android.kanji2anki;
+package com.colitti.android.Kanji2Anki;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
@@ -14,7 +14,6 @@ import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;

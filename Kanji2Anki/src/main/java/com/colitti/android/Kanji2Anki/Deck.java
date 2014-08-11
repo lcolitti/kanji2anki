@@ -1,10 +1,8 @@
-package com.colitti.android.kanji2anki;
+package com.colitti.android.Kanji2Anki;
 
 import android.util.Log;
 
 import org.json.JSONObject;
-
-import java.util.Hashtable;
 
 public class Deck {
     private static final String TAG = "Deck";

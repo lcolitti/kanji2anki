@@ -4,7 +4,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2.
  */
-package com.colitti.android.kanji2anki;
+package com.colitti.android.Kanji2Anki;
 
 public class Card {
     public static final char FIELD_SEPARATOR = (char) 0x1f;
